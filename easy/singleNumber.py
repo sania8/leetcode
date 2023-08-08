@@ -1,12 +1,11 @@
-#code to remove duplicates from a list
-intial_list=[] 
-n= int(input("enter the numbers to be append to list:"))
+initial_list = []
+n = int(input("Enter the number of elements: "))
 for i in range(n):
-    x= int(input(f"enter {i+1}st number:"))
-    intial_list.append(x)
-unique_list=[]
-for i in intial_list:
-    if i not in unique_list:
+    x = int(input(f"Enter {i+1}st number: "))
+    initial_list.append(x)
+unique_list = []
+for i in initial_list:
+    if initial_list.count(i) == 1 and i not in unique_list:
         unique_list.append(i)
-print("list with duplicates:" , intial_list)
-print("list without duplicates:" , unique_list)
+print("entered list:" , initial_list)
+print("Numbers that are not duplicated:", unique_list)
