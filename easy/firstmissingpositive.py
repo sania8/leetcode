@@ -1,5 +1,5 @@
 # Program to find out the missing number 
-x=[1,0,3,-1] #intialising the array any example can be given
+x=[1] #intialising the array any example can be given
 b = len(x)
 missing=[]
 for i in range(b):
